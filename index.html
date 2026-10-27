@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Diva - Б'юті & Лайфстайл на Марсі</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="header">
+      <div class="logo">Ares Diva ✨</div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="active">Головна</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">Про нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button id="audioBtn" class="btn-icon" title="Увімкнути космічний фоновий звук">🎵 Звук</button>
+        <button id="cartBtn" class="btn-cart">🛍️ (<span id="cartCount">0</span>)</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Відкрити меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <span class="badge">Марсіанський Б'юті-Стартап</span>
+        <h1>Сяй яскраво навіть під марсіанським куполом ✨</h1>
+        <p>Перший жіночий простір краси, затишку та космічного догляду. Доставка дронами у всі сектори Марса за 15 хвилин.</p>
+        <div class="hero-buttons">
+          <a href="#catalog" class="btn-primary">Переглянути каталог 💕</a>
+          <a href="#about" class="btn-secondary">Історія бренду</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>🔥 Рекомендовані Товари</h2>
+      <div id="recommendedGrid" class="products-grid"></div>
+    </section>
+    
+    <section id="catalog" class="section">
+      <h2>Каталог Продуктів 🌸</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-cat="all">Усі товари</button>
+        <button class="filter-btn" data-cat="beauty">Догляд & Б'юті</button>
+        <button class="filter-btn" data-cat="fashion">Стиль & Захист</button>
+        <button class="filter-btn" data-cat="home">Затишок Купола</button>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+    
+    <section id="about" class="section">
+      <h2>Про Нас 💖</h2>
+      <div class="grid-3">
+        <div class="glass-card">
+          <h3>📖 Історія бренду</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Бренд <strong>Ares Diva</strong> виник під час першої жіночої експедиції на Марс. Зрозумівши, що розріджене повітря та суворий клімат шкодять шкірі, наші засновниці створили першу лінію косметики з захистом від UV-радіації.</p>
+        </div>
+        <div class="glass-card">
+          <h3>🚀 Наша Місія</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Забезпечити кожну мешканку червоної планети відчуттям домашнього затишку, високоефективним доглядом та ультрасучасним космічним стилем незалежно від тиску та гравітації.</p>
+        </div>
+        <div class="glass-card">
+          <h3>🤖 Наш Талісман</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Робот-стиліст <strong>«Люсі»</strong>! Вона аналізує поточний рівень радіації, сухість повітря в куполі та підбирає ідеальний персональний догляд для кожного клієнта.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="delivery" class="section">
+      <h2>Доставка & Оплата 🛸</h2>
+      <div class="grid-3">
+        <div class="glass-card">
+          <h3>🚀 Рожеві Дрони-Експрес</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Безкоштовна доставка дроном-стилістом за 10-15 хвилин у будь-який закритий купол чи житловий сектор.</p>
+        </div>
+        <div class="glass-card">
+          <h3>💳 Способи Оплати</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Приймаємо Марсіанські Кредити ($MC$), космічний GlamCoin та картки банків Землі.</p>
+        </div>
+        <div class="glass-card">
+          <h3>🔄 Гарантія та Повернення</h3>
+          <p style="color: var(--text-muted); margin-top: 10px;">Якщо засіб не підійшов під ваш тип купольного мікроклімату - безкоштовне повернення протягом 14 марсіанських днів.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contacts" class="section">
+      <h2>Зв'яжися з Нами ✨</h2>
+      <div class="grid-2">
+        <form id="contactForm" class="glass-card form-box">
+          <h3>Форма зворотного зв'язку 💌</h3>
+          <input type="text" placeholder="Твоє ім'я чи ID" required>
+          <input type="email" placeholder="Частота / Космічна пошта" required>
+          <textarea placeholder="Повідомлення чи побажання..." rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Надіслати меседж 💌</button>
+        </form>
+        
+        <div class="glass-card">
+          <h3>📍 Наші Хаби на Марсі</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">Головний Б'юті-Хаб: Купол Alpha, Сектор 4</p>
+          
+          <div class="social-links">
+            <a href="#" class="social-btn">MarsGram</a>
+            <a href="#" class="social-btn">HoloCall</a>
+          </div>
+          
+          <h4 style="margin-top:20px; font-size: 0.95rem; color:var(--accent);">Інтерактивна карта Куполів:</h4>
+          <div class="mars-map">
+            <div class="map-point" style="top: 30%; left: 40%;" data-title="Хаб Alpha (Центральний)"></div>
+            <div class="map-point" style="top: 60%; left: 70%;" data-title="Сектор Olimpus"></div>
+            <div class="map-point" style="top: 45%; left: 20%;" data-title="Лабораторія №4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>© 2026 Ares Diva. Всі права захищено.<br><span>Навчальний проєкт. Усі події, ціни та контакти вигадані.</span></p>
+    </footer>
+    
+    <div id="productModal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close-modal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    
+    <div id="cartModal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close-cart-modal">&times;</span>
+        <h3>Твій Кошик Краси 🛍️</h3>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-total">Разом: <span id="cartTotalPrice">0</span> $MC$</div>
+        
+        <form id="checkoutForm" class="checkout-form">
+          <h4>Оформлення замовлення 🌸</h4>
+          <input type="text" id="custName" placeholder="Твоє Ім'я або ID" required>
+          <input type="text" id="custSector" placeholder="Номер Купола / Сектор" required>
+          <select id="deliveryType">
+            <option value="drone">Експрес-Дрон (15 хв)</option>
+            <option value="pickup">Заберу сама з Б'юті-Хабу</option>
+          </select>
+          <button type="submit" class="btn-primary">Замовити зараз ✨</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="toast" class="toast-notification">
+      <span id="toastMsg">Товар додано в кошик!</span>
+      <button class="toast-btn" onclick="openCart()">Перейти в кошик 🛍️</button>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
